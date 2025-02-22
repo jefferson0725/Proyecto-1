@@ -1,0 +1,87 @@
+body{
+    background-color:white  (76, 85, 78);
+    font: 1em sans-serif;
+
+}
+.parrafo{
+    background-color: rgb(0, 140, 255);
+    font-style: oblique;
+    
+}
+
+.header{
+    background-color: #22211f;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+.kokoro a{
+    color: #b59a61;
+    position: fixed;
+    bottom: 22px; 
+    right: 39px; /* Distancia desde la derecha */
+    
+    
+}
+.header a{
+    color: white;
+    font-size: 30px;
+    align-content: center;
+    padding-left: 20px;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navlist li{
+    margin: 15px;
+}
+.section-1{
+    background-color: white;
+    display: flex;
+    text-align:right;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.acerca-de{
+    margin-right: 40px;
+    width: 30%;
+}
+
+.section-1 img{
+    border-radius: 20px ;
+}
+
+
+
+
+.section-2 img {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+.pie-pag{
+    
+    border-radius: 5px;
+    background-color: #22211f;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.pie-pag h3{
+    color: #b59a61;
+    padding-left: 15px; 
+
+}
+.contactlist{
+    color: white;
+    list-style: none;
+    padding-left: 15px; 
+}
