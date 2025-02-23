@@ -8,7 +8,7 @@ body{
     font-style: oblique;
     
 }
-
+/*header*/
 .header{
     background-color: #22211f;
     display: flex;
@@ -21,7 +21,7 @@ body{
     color: #b59a61;
     position: fixed;
     bottom: 22px; 
-    right: 39px; /* Distancia desde la derecha */
+    right: 39px;
     
     
 }
@@ -42,6 +42,8 @@ body{
 .navlist li{
     margin: 15px;
 }
+
+/*section 1*/
 .section-1{
     background-color: white;
     display: flex;
@@ -60,12 +62,44 @@ body{
     border-radius: 20px ;
 }
 
-
+/*section 2*/
 .section-2 img {
     width: 100%;
     border-radius: 10px;
    
 }
+
+/*section 3*/
+
+.section-3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+}
+
+.producto {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.section-3 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid black;
+}
+.section-3 h4{
+    display: flex;
+    text-align: left;
+}
+.section-3 p{
+    display: flex;
+    text-align: left;
+    max-width: 300px;
+}
+
+/*footer*/
 
 .pie-pag{
     
@@ -84,4 +118,8 @@ body{
     color: white;
     list-style: none;
     padding-left: 15px; 
+}
+.contactlist a{
+    color: white;
+    text-decoration: none;
 }
