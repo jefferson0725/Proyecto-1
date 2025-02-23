@@ -20,7 +20,7 @@ body{
     color: #b59a61;
     position: fixed;
     bottom: 22px; 
-    right: 39px; /* Distancia desde la derecha */
+    right: 39px; 
     
     
 }
@@ -57,8 +57,6 @@ body{
 .section-1 img{
     border-radius: 20px ;
 }
-
-
 
 
 .section-2 img {
