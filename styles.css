@@ -14,6 +14,7 @@ body{
     display: flex;
     justify-content: space-between;
     color: white;
+    border-radius: 10px;
 
 }
 .kokoro a{
@@ -29,6 +30,7 @@ body{
     font-size: 30px;
     align-content: center;
     padding-left: 20px;
+    
 }
 .navlist{
     list-style: none;
@@ -69,7 +71,7 @@ body{
 
 .pie-pag{
     
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #22211f;
     display: flex;
     flex-direction: column;
