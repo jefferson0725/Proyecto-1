@@ -39,8 +39,18 @@ body{
     margin: 10px;
 }
 
-.navlist li{
+.navlist a{
+    text-decoration: none;
     margin: 15px;
+    font-size: medium;
+}
+
+/* check btn*/
+.checkbtn{
+    display: none;
+}
+#check{
+    display: none;
 }
 
 /*section 1*/
@@ -77,18 +87,25 @@ body{
     gap: 20px; 
 }
 
-.producto {
+.producto:hover {
     background-color: white;
     color: black;
     text-align: center;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
+
 .section-3 img {
-    width: 300px;
+    width: 280px;
     height: 250px;
     border-radius: 10px;
     border: solid #b59a61;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
+
 .section-3 h4{
     display: flex;
     text-align: left;
@@ -104,7 +121,77 @@ body{
     text-align: left;
     max-width: 300px;
 }
-
+/*form*/
+.f-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:  #af9e7a;
+    box-shadow: 5px 1px 10px 5px #cac9c9;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 50px;
+    color: black;
+}
+.form-container{
+    background: linear-gradient(to right, rgba(253, 253, 253, 0.9), rgba(145, 143, 52, 0.1));
+    border: 2px solid #b59a61;
+    border-radius: 15px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #b59a61;
+    border-radius: 9px;
+    width: 100%;
+    padding: 9px;
+    font-size: 14px;
+    color: #000;
+}
+.form-row label {
+    color: #333333;
+    margin-bottom: 5px;
+    text-align: initial;
+    font-weight: bold;
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #b59a61;
+    border-radius: 9px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 9px;
+    resize: none;
+    width: 100%;
+    color: #000;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #b6b82a;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
 /*footer*/
 
 .pie-pag{
@@ -129,3 +216,85 @@ body{
     color: white;
     text-decoration: none;
 }
+
+/*responsive*/
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+        color: #b59a61;
+        position: fixed;
+        bottom: 22px; 
+        right: 39px;
+    }
+
+    .navlist {
+        position: fixed;
+        bottom: 60px;
+        right: -100%;
+        width: 50%;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+    
+
+    .navlist li {
+        margin: 20px 0;
+    }
+
+    .navlist a {
+        font-size: 24px;
+    }
+    .kokoro a{
+        display: none;
+    }
+
+    
+    #check:checked ~ .navlist {
+        right: 0;
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .acerca-imagen{
+    position: relative;
+    z-index: 1; 
+    margin-top: 50px; 
+    }
+
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section3-head{
+        margin-top: 10px;
+    }
+    .section-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+   
+    .producto:hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-10px);
+        transition: transform 0.3s ease;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    .producto img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    }

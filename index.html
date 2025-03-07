@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página personal</title>
     <link rel="stylesheet" href="styles.css">
-    <script 
-        src="https://kit.fontawesome.com/84a8ab0154.js"
-        crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,12 +15,16 @@
         <header class="header">
             <a href="index.html"><i class="fa-solid fa-heart"></i></a>
             <nav class="navbar">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <ul class="navlist">
-                    <li>Inicio</li>
-                    <li>Acerca de mí</li>
-                    <li>Trabajos</li>
-                    <li>Servicios</li>
-                    <li>Contacto</li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#acerca-de">Acerca de mí</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,8 +48,8 @@
             <img src="assets/nose.webp" alt="paisaje">
         </section>
         <h2 class="section3-head" style="color: #b59a61;">Trabajos</h2>
-        <section class="section-3">
-            <div class="producto">
+        <section class="section-3" >
+            <div id="trabajos" class="producto">
                 <img src="assets/t1.jpg" alt="trabajo1">
                 <h4>Instalacion de redes</h4>
                 <p>Diseño infraestructuras que optimizan el rendimiento y la seguridad de las redes. Además, implementacion de redes inalámbricas con cobertura eficiente y he realizacion de mantenimiento preventivo para evitar fallos en la conectividad.</p>
@@ -66,13 +68,38 @@
                 <p class="mas">Leer mas</p>
             </div>
         </section>
+        <section class="form-container">
+            <div class="f-header">
+                <h1>Contacto</h1>
+                <p>Esperamos tu consulta</p>
+            </div>
+            <form action="" method="get" id="form">
+                <div class="form-row">
+                    <label for="nombre" >Nombre</label>
+                    <input type="text" placeholder="Nombre" id="nombre" required/>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="correo" id="email" placeholder="pepito@gmail.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+
+                
+            </form>
+        </section>
     </main>
     <footer class="pie-pag">
-        <div class="contacto">
+        <div class="contacto" id="contacto">
             <h3>Contacto</h3>
             <nav class="contactbar">
                 <ul class="contactlist">
-                    <a  href="https://www.instagram.com/jefferson_martiinez/" target="_blank"><li>Intagram</li></a>
+                    <a href="https://www.instagram.com/jefferson_martiinez/" target="_blank"><li>Intagram</li></a>
                     <a href="https://www.tiktok.com/@soyjefffff" target="_blank"><li>TikTok</li></a>
                     <a href="https://api.whatsapp.com/send/?phone=%2B573013334408&text&type=phone_number&app_absent=0" target="_blank"><li>WhatsApps</li></a>
                 </ul>
